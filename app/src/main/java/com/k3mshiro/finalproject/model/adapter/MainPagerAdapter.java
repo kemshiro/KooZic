@@ -1,13 +1,13 @@
-package com.k3mshiro.finalproject.adapter;
+package com.k3mshiro.finalproject.model.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.k3mshiro.finalproject.R;
-import com.k3mshiro.finalproject.fragment.MainFrg1;
-import com.k3mshiro.finalproject.fragment.MainFrg2;
-import com.k3mshiro.finalproject.fragment.MainFrg3;
+import com.k3mshiro.finalproject.controller.fragment.MainFrg2;
+import com.k3mshiro.finalproject.controller.fragment.MainFrg3;
+import com.k3mshiro.finalproject.controller.fragment.SongByNameFrg;
 
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class MainPagerAdapter extends FragmentStatePagerAdapter {
         super(fm);
 
         listMainFrg = new ArrayList<>();
-        frg = new MainFrg1();
+        frg = new SongByNameFrg();
         listMainFrg.add(frg);
 
         frg = new MainFrg2();
@@ -49,7 +49,7 @@ public class MainPagerAdapter extends FragmentStatePagerAdapter {
         String title = "";
         switch (position) {
             case 0:
-                title = String.valueOf(R.string.tab1_name);
+                title = "Bài hát";
                 break;
             case 1:
                 title = String.valueOf(R.string.tab2_name);

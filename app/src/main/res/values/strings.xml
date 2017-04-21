@@ -3,4 +3,8 @@
     <string name="tab1_name">tab1_name</string>
     <string name="tab2_name">tab2_name</string>
     <string name="tab3_name">tab3_name</string>
+    <string name="search_box_name">Tìm kiếm</string>
+    <string name="menu_option_settings">Cài đặt</string>
+    <string name="menu_option_edit">Sửa</string>
+    <string name="shuffle_text">Xáo trộn bài hát</string>
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_title_vs_search">96dp</dimen>
+    <dimen name="toolbar_height">36dp</dimen>
+    <dimen name="toolbar_textsize">18sp</dimen>
+    <dimen name="item_image_size">72dp</dimen>
+    <dimen name="item_text_name_size">18sp</dimen>
+    <dimen name="margin_in_item">10dp</dimen>
+    <dimen name="artist_text_size">15sp</dimen>
+    <dimen name="padding_in_layout">8dp</dimen>
+</resources>

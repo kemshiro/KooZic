@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_song"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_song_image"
+        android:layout_width="@dimen/item_image_size"
+        android:layout_height="@dimen/item_image_size"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_in_item"
+        android:layout_toRightOf="@+id/iv_song_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/item_text_name_size"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_song_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_song_name"
+        android:layout_marginLeft="@dimen/margin_in_item"
+        android:layout_marginRight="@dimen/margin_in_item"
+        android:layout_toRightOf="@+id/iv_song_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/artist_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_item_viewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_in_item"
+        android:layout_toRightOf="@id/iv_song_image"
+        android:background="@drawable/custom_lv_line"/>
+
+</RelativeLayout>
